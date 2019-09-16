@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.wujie.wifi.MainActivity">
+    tools:context="com.jimmy.wifi.MainActivity">
 
     <EditText
         android:id="@+id/edit_ssid"
@@ -24,6 +24,13 @@
         android:text="Cube@888888"
         android:hint="password"/>
 
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <Button
         android:id="@+id/btn_save"
         android:layout_width="wrap_content"
@@ -35,4 +42,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="移除"/>
+
+    <Button
+        android:id="@+id/check_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check wifi"/>
+    <Button
+        android:id="@+id/open_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open wifi"/>
+    <Button
+        android:id="@+id/close_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close wifi"/>
+    <Button
+        android:id="@+id/scan_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="scan wifi"/>
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="搜索wifi"
+        android:background="#ffffff"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/wifi_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/tv_scan"
+        android:background="#ffffff"/>
+
 </LinearLayout>
